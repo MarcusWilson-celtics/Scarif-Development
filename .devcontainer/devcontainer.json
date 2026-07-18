@@ -1,0 +1,22 @@
+{
+    "name": "Scarif PHP Development Environment",
+    "dockerComposeFile": [
+        "../docker-compose.yml"
+    ],
+    "service": "web",
+    "workspaceFolder": "/var/www/html",
+    "customizations": {
+        "vscode": {
+            "settings": {
+                "php.validate.executablePath": "/usr/local/bin/php",
+                "editor.formatOnSave": true
+            },
+            "extensions": [
+                "bmewburn.vscode-intelephense-client",
+                "xdebug.php-debug",
+                "eamodio.gitlens"
+            ]
+        }
+    },
+    "shutdownAction": "stopCompose"
+}
